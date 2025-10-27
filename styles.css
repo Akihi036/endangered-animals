@@ -1,0 +1,162 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ body {
+            background-color: #f9f9f9;
+ }
+
+
+#main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+
+
+ 
+}
+
+    
+#hero {
+     padding: 40px 50px;
+}  
+
+#hero  h1 {
+        font-size: 76px;
+        font-family: 'Arial', sans-serif;
+         color: orange;
+         text-align: center;
+    }
+
+#hero p {
+        padding-top: 30px;
+        font-size: 24px;
+        line-height: 1.6;
+        letter-spacing: 1px;
+        color: #333;
+        text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.fruit {
+    border-radius: 16px;
+    background-color: antiquewhite;
+    border: 1px solid hsl(192, 74%, 68%);
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    img {
+        width: 200px;    }
+}
+
+
+.fruit {
+    border-radius: 16px;
+    box-shadow: 8px 8px 12px hsla(329, 75%, 64%, 0.549);
+    background-color: rgb(193, 145, 215);
+    border: 1px solid hsl(192, 74%, 68%);
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    img {
+        width: 200px;    }
+}
+
+
+
+  .header {
+            background-color: #fff;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+        }
+
+        .brand-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #333;
+            letter-spacing: -0.5px;
+        }
+
+        .brand-title span {
+            color: #ff6b6b;
+        }
+        
+        .brand-logo {
+            margin-right: 10px;
+            color: #ff6b6b;
+        }
+
+
+        .brand-logo svg {
+            width: 40px;
+            height: 40px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-item {
+            margin-left: 30px;
+            position: relative;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #555;
+            font-weight: 600;
+            font-size: 16px;
+            padding: 8px 0;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: #ff6b6b;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #ff6b6b;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }

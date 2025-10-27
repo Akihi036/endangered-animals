@@ -1,0 +1,69 @@
+/* 全局重置：统一浏览器默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+/* 首页容器：控制全屏显示、背景图与内容居中 */
+.home-page {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('public/images/page.jpg'); /* 濒危动物背景图（可替换） */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* 背景遮罩：避免文字与背景混淆，提升可读性 */
+.home-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+/* 主题文字：深蓝色、加粗、醒目效果 */
+.main-title {
+    color: #0a2463; /* 深蓝色（可调整色值） */
+    font-size: 42px;
+    font-weight: 900;
+    margin-bottom: 20px; /* 与按钮紧凑衔接 */
+    z-index: 2;
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+    letter-spacing: 1px;
+}
+
+/* 跳转按钮：半透明蓝色背景 + 蓝绿色边框，适中大小 */
+.jump-btn {
+    padding: 12px 32px;
+    background: rgba(33, 150, 243, 0.6); /* 半透明蓝色 */
+    color: #fff;
+    border: 2px solid #00bcd4; /* 蓝绿色边框 */
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+/* 按钮hover交互：加深颜色，增强反馈 */
+.jump-btn:hover {
+    background: rgba(33, 150, 243, 0.8);
+    border-color: #00acc1;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+  padding: 1rem;
+  margin-top: 2rem;
+}
